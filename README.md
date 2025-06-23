@@ -1,66 +1,33 @@
-Repository for the course "Efficient Deep Learning" at IMT Atlantique
+This repo is forked then modified from the initial repo for the course "Efficient Deep Learning" at IMT Atlantique | Brest | Spring 2025
 --
 
-Course organisation / Syllabus
+The goal is to train a ResNet18 model in order to perform image classification on the dataset CIFAR10. Several fine-tuning and optimization method have been used:
 --
+1. Data Augmentation, Regularization
+   - exploring hyper parameters on a fixed architecture
+2. Quantization
+   - quantification on a small convolutional network
+3. Pruning
+   - Pruning a small convolutional networks
+4. Factorization
+  - Factorizing Deep neural networks
+5. Distillation
+  - Distillation of knowledge and features between neural networks
+6. Embedded Software and Hardware for Deep Learning
+7. Final Session
+  - Challenge final results
 
-Here is a detailed schedule, session by session:
-1. Introduction / Refresher on Deep Learning
-   1. [General Intro](intro.pdf) - Why do we need to optimize deep learning ? Introduction of the MicroNet Challenge.
-   2. [Course](slides_withnotes/cours1.pdf) - Deep Learning and Transfer Learning.
-   3. [Practical session](lab1.md) - introduction to PyTorch
-   4. Short project - exploring hyper parameters on a fixed architecture
-   5. Presentation of the Challenge Objectives and Rules (Long Project)
-2. Data Augmentation, Regularization
-   1. **Short evaluation** on Deep Learning Essentials and CNN layers
-   2. [Course](slides_withnotes/cours2.pdf) - Data Augmentation, Regularization and Self Supervised Learning
-   3. [Practical Session](lab2.md) - Data Augmentation
-   4. Short project - exploring hyper parameters on a fixed architecture
-3. Quantization
-   1. **Short evaluation** on Data Augmentation
-   2. **Students presentations** of short project - exploring hyper parameters on a fixed architecture
-   3. [Course](slides_withnotes/cours3.pdf) - Quantifying Deep neural networks
-   4. [Practical session](lab3.md) - quantification on a small convolutional network
-   5. Long project 1 - Challenge
-4. Pruning
-   1. **Short evaluation** on Quantization
-   2. [Course](cours4.pdf) - Pruning Deep neural networks
-   3. [Practical session](lab4.md) - pruning on a small convolutional network.
-   4. Long project 2 - Challenge
-5. Factorization
-   1. **Short evaluation** on Pruning
-   2. **Students presentations** on current work on Challenge
-   3. [Course](slides_withnotes/cours5.pdf) - Factorizing Deep neural networks
-   4. Long Project 3 - Challenge
-6. Distillation
-   1. **Short evaluation** on Factorization
-   2. [Course](cours6.pdf) - Distillation of knowledge and features between neural networks
-   3. Long Project 4 - Challenge
-7. Embedded Software and Hardware for Deep Learning
-   1. **Long evaluation** on Distillation and previous courses
-   2. [Course](cours7.pdf) - Embedded Software and Hardware for Deep Learning
-   3. Long Project 5 - Challenge
-8. Final Session
-   1. **Students presentations** - Challenge final results
-   2. Students feedback
 
-What is expected for the Long Project
+Objectives:
 --
-Short version : **Exploration of the accuracy / complexity tradeoff**
-
 Make sure you have download the CIFAR10 dataset at /opt/img/effdl-cifar10/
 To run the code, make sure you are inside "~\efficient-deep-learning\LAB\cifar10_image_classification\" 
 
-Long version : this course is mostly based on the long project, and you have a lot of freedom, which we expect you to use. The overarching goal is to explore the tradeoff between the performances of neural networks (= Accuracy on the test set) and complexity. Complexity can be either computational complexity (number of arithmetic operations), or memory complexity (memory size necessary to use the network).
+TLDR : this course is mostly based on a long project. The overarching goal is to explore the tradeoff between the performances of neural networks (= Accuracy on the test set) and complexity. Complexity can be either computational complexity (number of arithmetic operations), or memory complexity (memory size necessary to use the network).
 
-We encourage students to get creative and test combinations of the various ideas that we present. Starting from the end of Session 1, you already have enough knowledge to explore the tradeoff between architecture, number of parameters, and accuracy. Then, we study new notions that open new avenues to explore this tradeoff : quantization, pruning, factorization, distillation. In session 7, you'll have a deeper insight on how to thing about specific software or hardware architecture in order to fully exploit all the optimizations that can be done.
+We tested combinations of the various ideas mentioned above. We explored the tradeoff between architecture, number of parameters, and accuracy. Then, we studied new notions that open new avenues to explore this tradeoff : quantization, pruning, factorization, distillation. A deeper insight on how to thing about specific software or hardware architecture in order to fully exploit all the optimizations that can be done.
 
-Evaluation in this course
---
 
-There are **short written evaluations** during the first 10 minutes of **each** session starting from session 2. Don't be late!
-
-You will also be evaluated on 3 presentations that will happen in sessions 3, 5 and 8.
 
 General References
 --
